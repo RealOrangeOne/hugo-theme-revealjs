@@ -1,4 +1,24 @@
-<section id="{{ .URL }}">
+<section
+  id="{{ .URL }}"
+
+  {{ if .Params.autoslide }}
+    data-autoslide="{{ .Params.autoslide }}"
+  {{ end }}
+
+  {{ if .Params.background }}
+    {{ range $i, $e := .Params.background }}
+      data-background-{{ $i }}="{{ $e }}"
+    {{ end }}
+  {{ end }}
+
+  {{ if .Params.transition }}
+    data-transition="{{ .Params.transition }}"
+  {{ end }}
+
+  {{ if .Params.transition_speed }}
+    data-transition="{{ .Params.transition_speed }}"
+  {{ end }}
+>
   {{ if .Title }}
     {{ if not .Params.hide_title }}
       <h1>{{ .Title }}</h1>
