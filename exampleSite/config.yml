@@ -10,6 +10,6 @@ params:
         history: true
         center: true
 
-disableKinds:
-    - taxonomy
-    - taxonomyTerm
+outputs:
+    home:
+        - "html"
