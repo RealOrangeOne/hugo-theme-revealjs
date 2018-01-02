@@ -4,5 +4,5 @@
     data-fragment-index='{{ .Get "index" }}'
   {{ end }}
 >
-  {{ .Inner }}
+  {{ default .Inner (.Get "content") }}
 </span>
