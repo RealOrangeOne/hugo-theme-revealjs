@@ -1,0 +1,11 @@
+name: revealjs
+homepage: https://github.com/RealOrangeOne/hugo-theme-revealjs
+
+author:
+    name: Jake Howard
+    homepage: https://theorangeone.net
+
+original:
+    name: reveal.js
+    homepage: https://revealjs.com
+    repo: https://github.com/hakimel/reveal.js/
