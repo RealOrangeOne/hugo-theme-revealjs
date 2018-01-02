@@ -1,5 +1,5 @@
 ---
-title: Slide
+title: Main Slide
 ---
 
-Slide
+Main Slide

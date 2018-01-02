@@ -7,11 +7,30 @@
   <meta name="application-name" content="{{ .Site.Title }}" />
 
   <title>{{ .Site.Title }}</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.min.css" integrity="sha256-ol2N5Xr80jdDqxK0lte3orKGb9Ja3sOnpAUV7TTADmg=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/night.min.css" integrity="sha256-Z++FT8WbMFoDQuVfqjQhV+GqvFlBdvKEDGH0TJ1ELbo=" crossorigin="anonymous" />
 </head>
 <body>
 
 {{ block "main" . }}{{ end }}
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/js/reveal.min.js" integrity="sha256-ixSKHrWAL2k0mqVSRju9+to2/uZSEK9+kJRfdNBolG8=" crossorigin="anonymous"></script>
+<script>
+
+  Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true,
+    center: true,
+
+    width: 1500,
+    height: 800,
+
+    transition: 'slide',
+    backgroundTransition: 'zoom'
+  });
+</script>
 </body>
 </html>
 
