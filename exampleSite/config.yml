@@ -3,6 +3,13 @@ title: Hugo Theme RevealJS
 themesDir: "../../"
 theme: "hugo-theme-revealjs"
 
+params:
+    revealjs:
+        controls: true
+        progress: true
+        history: true
+        center: true
+
 disableKinds:
     - taxonomy
     - taxonomyTerm

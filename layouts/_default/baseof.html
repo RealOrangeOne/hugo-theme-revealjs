@@ -17,19 +17,7 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/js/reveal.min.js" integrity="sha256-ixSKHrWAL2k0mqVSRju9+to2/uZSEK9+kJRfdNBolG8=" crossorigin="anonymous"></script>
 <script>
-
-  Reveal.initialize({
-    controls: true,
-    progress: true,
-    history: true,
-    center: true,
-
-    width: 1500,
-    height: 800,
-
-    transition: 'slide',
-    backgroundTransition: 'zoom'
-  });
+  Reveal.initialize({{ jsonify (default .Site.Params.revealjs .Site.Data.reveal_defaults) | safeJS }});
 </script>
 </body>
 </html>
