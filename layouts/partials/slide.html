@@ -1,6 +1,8 @@
 <section>
   {{ if .Title }}
-    <h1>{{ .Title }}</h1>
+    {{ if not .Params.hide_title }}
+      <h1>{{ .Title }}</h1>
+    {{ end }}
   {{ end }}
 
   {{ .Content }}
