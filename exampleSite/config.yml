@@ -1,0 +1,8 @@
+baseURL: https://realorangeone.github.io/hugo-theme-revealjs
+title: Hugo Theme RevealJS
+themesDir: "../../"
+theme: "hugo-theme-revealjs"
+
+disableKinds:
+    - taxonomy
+    - taxonomyTerm
