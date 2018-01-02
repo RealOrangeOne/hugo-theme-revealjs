@@ -4,3 +4,7 @@ hide_title: true
 ---
 
 Main Slide
+
+```python
+import thing
+```

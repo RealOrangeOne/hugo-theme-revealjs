@@ -10,14 +10,18 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.min.css" integrity="sha256-ol2N5Xr80jdDqxK0lte3orKGb9Ja3sOnpAUV7TTADmg=" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/night.min.css" integrity="sha256-Z++FT8WbMFoDQuVfqjQhV+GqvFlBdvKEDGH0TJ1ELbo=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/monokai-sublime.min.css" integrity="sha256-k5mFes0QrsMTUCIg7sRlizkZIhMeL4fTABLlkjQmR0s=" crossorigin="anonymous" />
 </head>
 <body>
 
 {{ block "main" . }}{{ end }}
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/js/reveal.min.js" integrity="sha256-ixSKHrWAL2k0mqVSRju9+to2/uZSEK9+kJRfdNBolG8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+
 <script>
   Reveal.initialize({{ jsonify (default .Site.Params.revealjs .Site.Data.reveal_defaults) | safeJS }});
+  hljs.initHighlightingOnLoad()
 </script>
 </body>
 </html>
