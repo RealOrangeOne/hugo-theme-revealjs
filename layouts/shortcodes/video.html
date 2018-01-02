@@ -1,0 +1,8 @@
+<video
+  class='{{ .Get "class" }}'
+  src='{{ .Get "src" }}'
+
+  {{ if .Get "autoplay" }}
+    data-autoplay
+  {{ end }}
+></video>
