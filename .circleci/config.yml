@@ -4,6 +4,7 @@ jobs:
     build:
         docker:
             - image: circleci/node:6.10
+        working_directory: ~/hugo-theme-revealjs
         steps:
             - checkout
             - run:
