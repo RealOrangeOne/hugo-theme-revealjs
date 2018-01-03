@@ -9,8 +9,9 @@
   <title>{{ .Site.Title }}</title>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.min.css" integrity="sha256-ol2N5Xr80jdDqxK0lte3orKGb9Ja3sOnpAUV7TTADmg=" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/night.min.css" integrity="sha256-Z++FT8WbMFoDQuVfqjQhV+GqvFlBdvKEDGH0TJ1ELbo=" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/monokai-sublime.min.css" integrity="sha256-k5mFes0QrsMTUCIg7sRlizkZIhMeL4fTABLlkjQmR0s=" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/{{ default .Site.Params.reveal_theme "night" }}.min.css' />
+  <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/{{ default .Site.Params.hljs_theme "monokai-sublime" }}.min.css' />
 </head>
 <body>
 
