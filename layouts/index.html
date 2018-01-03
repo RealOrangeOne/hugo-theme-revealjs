@@ -6,7 +6,7 @@
     <div class="slides">
       {{ partial "slide.html" . }}
 
-      {{ range .Site.Sections }}
+      {{ range .Site.Sections.ByWeight }}
         <section>
           {{ partial "slide.html" . }}
 
