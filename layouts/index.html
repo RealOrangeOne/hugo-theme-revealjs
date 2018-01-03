@@ -6,11 +6,11 @@
     <div class="slides">
       {{ partial "slide.html" . }}
 
-      {{ range .Site.Sections.ByWeight }}
+      {{ range sort .Site.Sections "Weight" "desc" }}
         <section>
           {{ partial "slide.html" . }}
 
-          {{ range .Pages.ByWeight }}
+          {{ range sort .Pages "Weight" "desc" }}
             {{ partial "slide.html" . }}
           {{ end }}
         </section>
