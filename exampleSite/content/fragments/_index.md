@@ -1,9 +1,13 @@
 ---
-title: Thing 1 index
+title: Fragments
 ---
 
-Text 
+You can use fragments as shortcodes
 
 {{% fragment %}}
-Some more text!
+```html
+{{%/* fragment */%}}
+Like this!
+{{%/* fragment */%}}
+```
 {{% /fragment %}}

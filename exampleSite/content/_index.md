@@ -1,10 +1,7 @@
 ---
-title: Main Slide
-hide_title: true
+title: Hugo Theme Reveal.js
 ---
 
-Main Slide
+### The HTML Presentation Framework theme for Hugo 
 
-```python
-import thing
-```
+Created by [Jake Howard](https://github.com/RealOrangeOne/hugo-theme-revealjs), [Hugo](https://gohugo.io) and [Reveal.js](https://revealjs.com/#/)
