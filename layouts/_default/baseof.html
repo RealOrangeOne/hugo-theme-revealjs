@@ -10,8 +10,8 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.min.css" integrity="sha256-ol2N5Xr80jdDqxK0lte3orKGb9Ja3sOnpAUV7TTADmg=" crossorigin="anonymous" />
 
-  <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/{{ default .Site.Params.reveal_theme "night" }}.min.css' />
-  <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/{{ default .Site.Params.hljs_theme "monokai-sublime" }}.min.css' />
+  <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/{{ default "night" .Site.Params.reveal_theme }}.min.css' />
+  <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/{{ default "monokai-sublime" .Site.Params.hljs_theme }}.min.css' />
 
   {{ if fileExists "static/index.css" }}
     <link rel="stylesheet" href='{{ .Site.BaseURL }}index.css' />
