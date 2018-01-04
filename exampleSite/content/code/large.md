@@ -1,0 +1,25 @@
+---
+title: Lots of code!
+---
+
+```html
+{{ define "main" }}
+
+  <div class="reveal">
+    <div class="slides">
+      {{ partial "slide.html" . }}
+
+      {{ range sort .Site.Sections "Weight" "desc" }}
+        <section>
+          {{ partial "slide.html" . }}
+
+          {{ range sort .Pages "Weight" "desc" }}
+            {{ partial "slide.html" . }}
+          {{ end }}
+        </section>
+      {{ end }}
+    </div>
+  </div>
+{{ end }}
+
+```
