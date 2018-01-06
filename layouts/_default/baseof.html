@@ -14,7 +14,7 @@
   <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/{{ default "monokai-sublime" .Site.Params.hljs_theme }}.min.css' />
 
   {{ if fileExists "static/index.css" }}
-    <link rel="stylesheet" href='{{ .Site.BaseURL }}/index.css' />
+    <link rel="stylesheet" href='{{ relURL "index.css" }}' />
   {{ end }}
 </head>
 <body>
@@ -29,10 +29,10 @@
 <script type="application/json" id="reveal-user-config">{{ jsonify .Site.Params.revealjs | safeJS }}</script>
 <script type="application/json" id="reveal-default-config">{{ jsonify .Site.Data.reveal_defaults | safeJS }}</script>
 
-<script type="application/javascript" src="{{ .Site.BaseURL }}/hugo-theme-revealjs.js"></script>
+<script type="application/javascript" src='{{ relURL "hugo-theme-revealjs.js" }}'></script>
 
 {{ if fileExists "static/index.js" }}
-  <script type="application/json" src="{{ .Site.BaseURL }}.index.js"></script>
+  <script type="application/json" src='{{ relURL "index.js" }}'</script>
 {{ end }}
 </body>
 </html>
