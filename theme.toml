@@ -1,4 +1,6 @@
 name = "revealjs"
+license = "MIT"
+licenselink = "https://github.com/RealOrangeOne/hugo-theme-revealjs/blob/master/LICENSE"
 homepage = "https://github.com/RealOrangeOne/hugo-theme-revealjs"
 tags = ["presentation", "revealjs"]
 features = ["presentation"]
