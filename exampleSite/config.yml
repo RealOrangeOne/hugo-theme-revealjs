@@ -13,6 +13,9 @@ params:
         height: 800
         width: 1500
 
+disableKinds:
+    - "sitemap"
+
 outputs:
     home:
         - "html"

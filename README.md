@@ -7,3 +7,22 @@ Use [Hugo](https://gohugo.io) to create slideshow presentations, powered by [rev
 ![Screenshot](images/screenshot.png)
 
 Visit [the GitHub pages site](https://realorangeone.github.io/hugo-theme-revealjs/) for an example and usage instructions. 
+
+## Configuration
+`params.reveal_theme`: css theme name for revealjs (default: `night`)
+`params.hljs_theme`: css theme name for highlight.js (default: `monokai_sublime`)
+`params.revealjs`: configuration options passed directly to `Reveal.initialise`. ([default](data/reveal_defaults.yml))
+
+### Optimisation
+RevealJS is a single-page application, meaning the only required file is `index.html`. As all static assets are loaded from `cdnjs`, there's very little that needs to be rendered. 
+
+By default, no dedicate pages / sections are rendered. To reduce the output to only the required files, add this to your sites config:
+
+```yaml
+disableKinds:
+    - "sitemap"
+
+outputs:
+    home:
+        - "html"
+```
