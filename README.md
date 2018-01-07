@@ -6,7 +6,7 @@ Use [Hugo](https://gohugo.io) to create slideshow presentations, powered by [rev
 
 ![Screenshot](https://github.com/RealOrangeOne/hugo-theme-revealjs/blob/master/images/screenshot.png?raw=true)
 
-Visit [the GitHub pages site](https://realorangeone.github.io/hugo-theme-revealjs/) for an example and usage instructions. 
+Visit [the GitHub pages site](https://hugo-theme-revealjs.netlify.com/) for an example and usage instructions. 
 
 ## Configuration
 - `params.reveal_theme`: css theme name for revealjs (default: `night`)

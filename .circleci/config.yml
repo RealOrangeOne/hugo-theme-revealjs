@@ -6,9 +6,6 @@ jobs:
             - image: circleci/node:6.10
         working_directory: ~/hugo-theme-revealjs
         steps:
-            - add_ssh_keys:
-                fingerprints:
-                    - "89:68:2d:ab:18:9f:09:7d:22:f7:b4:f0:9b:bf:4a:bb"
             - checkout
             - run:
                 name: Install Hugo
@@ -16,7 +13,3 @@ jobs:
             - run:
                 name: Build site
                 command: hugo -s exampleSite
-            - deploy:
-                name: Deploy to Github Pages
-                command: ./.circleci/deploy.sh
-

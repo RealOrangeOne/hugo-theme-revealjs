@@ -1,4 +1,4 @@
-baseURL: https://realorangeone.github.io/hugo-theme-revealjs
+baseURL: https://hugo-theme-revealjs.netlify.com/
 title: Hugo Theme RevealJS
 themesDir: "../../"
 theme: "hugo-theme-revealjs"
